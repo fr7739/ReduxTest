@@ -8,13 +8,13 @@ class Prod extends Component {
 
             return(
                 <View key = {product.id.toString()} style = {{borderWidth: 2}}>
-                    <View style = {{flex: 1, flexDirection: 'row', justifyContent: 'center'}}>
+                    <View style = {{ flexDirection: 'row', justifyContent: 'center'}}>
                         <Image source={{uri: product.images[0].src}} style = {styles.buttonStyle3} />
                     </View>
-                    <View style = {{flex: 1, flexDirection: 'row', justifyContent: 'center'}}>
+                    <View style = {{ flexDirection: 'row', justifyContent: 'center'}}>
                         <Text>{product.title}</Text>
                     </View>
-                    <View style = {{flex: 1, flexDirection: 'row', justifyContent: 'center'}}>
+                    <View style = {{ flexDirection: 'row', justifyContent: 'center'}}>
                         <Text>Price: {product.variants[0].price}</Text>
                     </View>
                 </View>
@@ -22,7 +22,7 @@ class Prod extends Component {
             )
         })
         return(
-            <View style = {{flex: 2, flexDirection: 'row'}}>
+            <View style = {{flex: 1, flexDirection: 'row'}}>
             <ScrollView>
             {products}
             </ScrollView>

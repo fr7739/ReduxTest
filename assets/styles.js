@@ -118,7 +118,7 @@ gridItemText: {
     width: 150,
     height: 150,
     paddingTop: 20,
-    borderWidth: 3,
+    borderWidth: 1,
     borderColor: 'black',
     justifyContent: 'center',
     },
